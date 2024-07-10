@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace,sans-serif;
+    background-color: black;
+    height: 100vh;
+}
+
+.contenedor{
+    text-align: center;
+    animation: desplazamiento 2.5s ;
+}
+
+h1{
+    padding: 5px;
+    color: rgb(128, 255, 0);
+    text-shadow: 1px 1px 5px grey;
+    animation-name:destello;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+li{
+    list-style: none;
+}
+
+.link{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: black;
+    color: white;
+    transition-property: all;
+    transition-duration: .7s;
+}
+.link:hover{
+    box-shadow: 1px 1px 10px rgb(183, 255, 0);
+    border-radius: 10px;
+}
+
+@keyframes desplazamiento{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes destello{
+    0%{
+        text-shadow: 1px 1px 30px rgb(183, 255, 0)
+    }
+    50%{
+        text-shadow: 1px 1px 20px rgb(183, 255, 0) 
+    }
+    100%{
+        text-shadow: 1px 1px 15px rgb(183, 255, 0)
+    }
+}
+
+
+
